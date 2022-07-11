@@ -4,49 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual ID Card</title>
+    <title>StopWatch</title>
+    <script src="P1.js"></script>
     <style>
-        #iddisplay{
-            position: fixed;
-            left:700px;
-            font-size:x-large;
-            align-items: center;
+        body{
+            margin: 0;
+            padding: 0;
         }
-        img{
-            width: 250px;
-            height:150px;
+        div{
+            text-align: center;
+            font-size: medium;
+            background-color: rgb(246, 162, 16);
+            border: 1px solid white;
+            border-width: 500px;
+            color: white;
+            height: 200px;
+            
         }
-        #notvalid{
-            color:red;
-            font-family: Arial, Helvetica, sans-serif;
+        button{
+            background-color: rgb(246, 162, 16);
+            color: white;
+            border-color: white;
+            width:100px;
         }
-        
+        #time{
+            font-size: x-large;
+        }
     </style>
 </head>
 <body>
-    <form name="VirtualID">
-        <label>Student Name</label>
-        <input type="text" name="StudentName" id="sname">
-        <div id="snameerr"></div>
-        <br>
-        <label>Student ID</label>
-        <input type="text" name="StudentID" id="sid">
-        <div id="siderr"></div>
-
-    </form>
-    <br>
-    <h4>Click on below button to Upload an image</h4>
-    
-    <input type="file" id="img"  onclick="upload()" accept="image/jpeg, image/png, image/jpg">
-    
-    <div id="iddisplay">
-    <img src="Naruto_newshot.jpg" id="upload">
-    <p id="Isname">Username : <span id="input"></span></p>
-    
-    <p id="Isid">Student ID : <span id="input1"></span></p>
+    <div>
+    <h2>STOPWATCH</h2>
+    <h2>JAVASCRIPT STOPWATCH</h2>
+    <p id="tens">00<span>:</span></p>
+    <p id="seconds">00</p>
+    <button id="start">Start</button> &nbsp;
+    <button id="stop">Stop</button> &nbsp;
+    <button id="reset">Reset</button>
     </div>
-    <p id="notvalid"></p>
-    <button onclick="submit()">Generate</button>
-    <script src="P3.js"></script>
 </body>
 </html>
